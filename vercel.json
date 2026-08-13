@@ -8,6 +8,7 @@
     { "source": "/(.*)\\.(js|woff2?|ttf|eot|svg|png|jpg|jpeg|gif|webp|ico)", "headers": [{"key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400"}] }
   ],
   "redirects": [
+    { "source": "/:path*", "has": [{ "type": "host", "value": "www.rockhardcoatings.net" }], "destination": "https://rockhardcoatings.net/:path*", "statusCode": 301 },
     { "source": "/index.php/:path*", "destination": "/:path*", "statusCode": 301 },
     { "source": "/xmlrpc.php", "destination": "/", "statusCode": 301 },
     { "source": "/wp-login.php", "destination": "/", "statusCode": 301 },
